@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="first.js">
+</head>
+</body>
+           <div class="gallery-item">
+            <img src="/pic-1.jpg" alt="Image 1" onclick="openModal(0)">
+        </div>
+        <div class="gallery-item">
+            <img src="/pic-2.jpg" alt="Image 2" onclick="openModal(1)">
+        </div>
+        <div class="gallery-item">
+            <img src="/pic-3.jpg" alt="Image 3" onclick="openModal(2)">
+        </div>
+        <div class="gallery-item">
+            <img src="/pic-4.jpg" alt="Image 4" onclick="openModal(3)">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="controls">
+                <span class="prev" onclick="changeImage(-1  )">&#10094;</span>
+                <span class="next" onclick="changeImage(1)">&#10095;</span>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+
